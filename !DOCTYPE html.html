@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korrupted: Shadows of the Poisoned Night</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <section id="landing">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Korrupted</h1>
+            <p>Shadows of the Poisoned Night</p>
+            <button id="startBtn">Begin Investigation</button>
+        </div>
+    </section>
+
+    <!-- Story Page -->
+    <section id="story" class="hidden">
+        <div class="story-content">
+            <h2>The Case of the Poisoned Night</h2>
+            <p>You are about to enter the shadows where <span class="highlight">Korrupted</span> lingers. There are clues hidden in the dark, and you must find them.</p>
+            <button id="drinkBtn">Investigate Drinks</button>
+        </div>
+    </section>
+
+    <!-- Puzzle: Poisoned Drinks -->
+    <section id="drinks" class="hidden">
+        <div class="puzzle-content">
+            <h2>Which Drink Isn't Poisoned?</h2>
+            <div class="drinks">
+                <div class="drink" onclick="checkDrink('poison')">Midnight Velvet</div>
+                <div class="drink" onclick="checkDrink('safe')">Venom’s Sip</div>
+                <div class="drink" onclick="checkDrink('poison')">Whisper's Shadow</div>
+            </div>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
